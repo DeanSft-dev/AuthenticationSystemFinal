@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* default setting */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+*:focus {
+    outline: none;
+}
+
+
+body {
+    position: relative;
+    background-color: #f0f0f0;
+    font-family: 'poppins', sans-serif;
+}
+
+
+/* NAVBAR SETTING */
+.navbar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    align-items: center;
+    padding: 0 2.5vw;
+}
+
+/* navbar toggle button */
+.toggle-btn {
+    width: 20px;
+    height: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-btn span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    transform: translate(-50%);
+    background-color: #979797;
+}
+
+.toggle-btn span:nth-child(1) {
+    top: 0;
+}
+
+.toggle-btn span:nth-child(3) {
+    top: 100%;
+}
+
+/* the logo */
+.logo {
+    height: 30px;
+    margin: -10px 30px 0;
+}
+
+/* the search box */
+.search-box {
+    position: relative;
+    max-width: 500px;
+    width: 50%;
+    height: 35px;
+    display: flex;
+}
+
+.search-bar {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #dbdbdb;
+    padding: 0 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.search-btn {
+    width: 15%;
+    height: 100%;
+    background: #f0f0f0;
+    border: 2px solid #dbdbdb;
+    padding: 0 5px;
+    border-left:  none;
+}
+
+
+/* user option icons */
+.user-options {
+    height: 35px;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.user-options .icon {
+    height: 80%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+/* the navigation sidebar */
+.side-bar {
+    position: fixed;
+    top:60px;
+    left: 0;
+    min-width: 250px;
+    width: 250px;
+    height: calc(100vh - 60px);
+    background: #fff;
+    padding-right: 10px;
+}
+
+/* sidebar links */
+.links {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #242424;
+    font-size: 14px;
+    font-family: 500;
+    text-decoration: none;
+}
+
+
+.links img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.links:hover,
+.links.active {
+    background: #0001;
+}
+
+.separator {
+    border: none;
+    border-bottom: 1px solid #0001;
+    margin: 20px 0;
+}
